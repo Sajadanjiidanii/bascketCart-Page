@@ -40,7 +40,6 @@ items.forEach(function(item){
 const loginSignup = $.querySelector("#login-signup");
 const logIn = $.querySelector("#login");
 const signUp = $.querySelector("#signup");
-localStorage.setItem("ShowName","Yes");
 
 function exitAccount(){
     userAccount.style.display = "none";
@@ -52,11 +51,11 @@ function exitAccount(){
 
 function signChack(){
     let isName = localStorage.getItem("Name");
-    let userName = localStorage.getItem("Name");
-    let showUser = localStorage.getItem("ShowName");
+    let userName = JSON.parse(localStorage.getItem("Name"));
+    let showName = localStorage.getItem("ShowName");
 
     if( isName ){
-        if( showUser == "Yes"){
+        if( showName == "Yes"){
             logIn.style.display = "none";
             signUp.style.display = "none";
             loginSignup.insertAdjacentHTML("afterbegin","<span id=\"userAccount\">" + userName + "</span><span id=\"exitAccountBtn\"> / خروج </span>");
@@ -66,5 +65,6 @@ function signChack(){
         }
     }
 };
+
 window.addEventListener("load",signChack);
 window.addEventListener("load",loadcart);
