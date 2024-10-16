@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+body{
+    background-color: rgb(229, 229, 229);
+    margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
+}
+/* nav top style */
+nav#menu{
+    display: grid;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+/* menu top */
+
+div#menu-top{
+    align-items: center;
+    margin-bottom: 20px;
+    grid-gap: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    grid-template-columns: 10% 1fr 15%;
+}
+img#logo-top{
+    width: 140px;
+    height: 80px;
+    position: relative;
+    right: -10px;
+}
+div#searchbox{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 5%;
+    grid-template-rows: 100%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: rgb(229, 229, 229);
+}
+input{
+    padding-right: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.bx-search-alt-2{
+    cursor: pointer;
+    font-size: 27px;
+    align-self: center;
+    color: rgb(118, 118, 118);
+}
+.bx-search-alt-2:hover{
+    color: black;
+}
+div#login-signup{
+    position: absolute;
+    margin: 2px -75px 0 0;
+    color: rgb(118, 118, 118);
+    left: 10px;
+}
+div#login-signup > span{
+    cursor: pointer;
+}
+div#login-signup > span:hover{
+    color: black;
+}
+#cart-icon{
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+#login , #signup , #cart-icon{
+    color: rgb(118, 118, 118);
+}
+#login:hover , #signup:hover , #cart-icon:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/* sub menu */
+ul#items{
+    display: grid;
+    list-style: none;
+    font-weight: 600;
+    grid-auto-flow: column;
+    color: rgb(118, 118, 118);
+    justify-content: space-evenly;
+}
+ul#items li a{
+    font-weight: 600;
+    color: rgb(118, 118, 118);
+}
+ul#items li a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* container content */
+main{
+    width: 100%;
+}
+div#options{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    height: 170px;
+    margin-top: 30px;
+}
+div#options > img{
+    width: 250px;
+    height: 100%;
+}
+div.prodoctbox{
+    display: grid;
+    height: auto;
+    margin-top: 30px;
+    background-color: white;
+}
+h1.title{
+    padding-top: 25px;
+    text-align: center;
+}
+ul.Products{
+    display: grid;
+    list-style: none;
+    margin-top: 30px;
+    text-align: center;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4,20%);
+    grid-template-rows: auto;
+}
+ul.Products > li{
+    width: 200px;
+    height: 200px;
+    margin-top: -20px;
+    margin-bottom: 100px;
+    background-color: rgb(229, 229, 229)
+}
+ul.Products > li:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.7);
+}
+.ProductsName{
+    color: rgb(118, 118, 118);
+}
+.ProductsName:hover{
+    cursor: pointer;
+    color: black;
+}
+.price{
+    color: yellowgreen;
+}
+.price:hover{
+    color: green;
+}
+.ProductsImg{
+    width: 100%;
+}
+#cartList{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-template-rows: auto auto;
+    padding-bottom: 20px;
+}
+.bxs-trash{
+    color: white;
+    font-size: 30px;
+    margin-top: 40%;
+}
+
+#resultBascket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: rgb(229, 229, 229);
+}
+.group{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    grid-gap: 10px;
+    height: 100%;
+}
+.group > h1{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.group > p{
+    color: green;
+}
+#resultBascket > button{
+    width: 170px;
+    height: 70%;
+    cursor: pointer;
+    margin-left: 20px;
+    color: green;
+    background-color: white;
+    border: 1.5px solid green;
+}
+#resultBascket > button:hover{
+    color: white;
+    background-color: green;
+}
+
+/* footer */
+#footerContent{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    grid-template-columns: 20% 40% 25%;
+    height: auto;
+    margin-top: 50px;
+}
+#footerContent > ul{
+    list-style: none;
+    line-height: 40px;
+    color: rgb(118, 118, 118);
+}
+#footerContent > ul > li:first-child{
+    font-weight: 600;
+    color: black;
+}
+#menu-links{
+    display: grid;
+}
+#menu-links > a{
+    color: rgb(118, 118, 118);
+}
+#menu-links > a:hover{
+    color: black;
+}
+#enamadImg{
+    width: 200px;
+}
+
+/* class */
+.hide{
+    display: none;
+}
