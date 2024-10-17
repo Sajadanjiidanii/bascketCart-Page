@@ -2,7 +2,7 @@ const $ = document;
 let bascketCart = [];
 
 function loadcart(){
-    bascketCart.push(JSON.parse(localStorage.getItem("bascketCart")));
+    bascketCart = JSON.parse(localStorage.getItem("bascketCart")));
 }
 
 /// start append products in html ///
