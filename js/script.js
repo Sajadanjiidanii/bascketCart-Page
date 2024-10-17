@@ -50,7 +50,7 @@ function loadcart(){
     paymentBtn.addEventListener("click",function(){
         localStorage.removeItem("bascketCart");
         localStorage.removeItem("productInfo");
-        location.href = ;
+        location.href = "https://sajadanjiidanii.github.io/ColorShop/";
     });
 }
 
