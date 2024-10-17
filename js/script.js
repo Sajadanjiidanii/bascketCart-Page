@@ -9,6 +9,7 @@ function loadcart(){
 
 const cartList = $.querySelector("#cartList");
 bascketCart.forEach(function(Product){
+    console.log(Product);
     cartList.insertAdjacentHTML("beforeend" , "<li class=\"bascketItem\"><div><img class=\"ProductsImg\" src=\""+ Product.img +"\" alt=\"ProductsImg\"><p class=\"ProductsName\">"+ Product.name +"</p><p class=\"price\">"+ Product.pricy +" تومان</p></div></li>");
 });
 
