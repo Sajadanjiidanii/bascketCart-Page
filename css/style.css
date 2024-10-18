@@ -141,8 +141,6 @@ ul.Products{
     text-align: center;
     grid-auto-flow: column;
     justify-content: space-evenly;
-    grid-template-columns: repeat(4,20%);
-    grid-template-rows: auto;
 }
 ul.Products > li{
     width: 200px;
@@ -173,8 +171,6 @@ ul.Products > li:hover{
 }
 #cartList{
     display: grid;
-    grid-template-columns: repeat(4,20%);
-    grid-template-rows: auto auto;
     padding-bottom: 20px;
 }
 .bxs-trash{
@@ -208,6 +204,7 @@ ul.Products > li:hover{
 }
 .group > p{
     color: green;
+    font-size: 12px;
 }
 #resultBascket > button{
     width: 170px;
