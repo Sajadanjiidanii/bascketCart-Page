@@ -13,18 +13,6 @@
     img#logo-top{
         right: -25%;
     }
-} 
-@media (max-width : 882px){
-    ul.Products{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-        justify-items: center;
-    }
-    ul#otherItem{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 25% 25% 25% 25%;
-        justify-items: center;
-    }
 }
 @media (max-width : 770px){
     div#menu-top{
@@ -48,16 +36,6 @@
     #items{
         font-size: 10px;
     }
-    ul.Products{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,50%);
-        justify-items: center;
-    }
-    ul#cartList{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,50%);
-        justify-items: center;
-    }
 }
 @media (max-width : 657px){
     #footerContent{
@@ -78,15 +56,6 @@
     }
     #options > img {
         width: 70%;
-    }
-    ul.Products{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,25%);
-    }
-    ul#cartList{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8,12.5%);
-        justify-items: center;
     }
 }
 @media (max-width : 600px){
